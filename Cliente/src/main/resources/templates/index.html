@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/Visualizador.css}" href="/css/Visualizador.css" rel="stylesheet" type="text/css"/>
+    <title>Vizualizador</title>
+</head>
+<body>
+<h5 align="center">Sistema Predicción Estancia En Centros Hospitalarios</h5>
+<div class="container">
+    <form action="/Inicio">
+        <br>
+        <input class="btn__submit1" type="submit" value="Predicción"/>
+        <br>
+        <br>
+        <div  align="center" id="cabecera1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/245px-Scikit_learn_logo_small.svg.png"/>
+        </div>
+        <br>
+        <br>
+    </form>
+
+
+    <form action="/Clasificacion">
+        <input class="btn__submit1" type="submit" value="Clasificación"/>
+        <br>
+        <br>
+        <div  align="center" id="cabecera2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/220px-TensorFlowLogo.svg.png"/>
+        </div>
+    </form>
+</div>
+</body>
+</html>

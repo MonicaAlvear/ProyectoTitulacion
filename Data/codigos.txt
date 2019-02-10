@@ -1,0 +1,133 @@
+Tipo:
+
+=SI(C2="Cr?nico";1;SI(C2="Agudo";0;99))
+
+Cronico = 1
+Agudo = 0
+Sin tipo hospitales b?sicos = 99
+
+****************************************************************************************
+
+
+
+Sexo:
+
+=SI(E2="Mujer";0;1)
+
+Mujer = 0
+Hombre = 1
+
+****************************************************************************************
+
+
+etnia:
+
+=SI(J2="Afroecuatoriano/a Afrodescendiente";0;SI(J2="Blanco/a";1;SI(J2="Ind?gena";2;SI(J2="Mestizo/a";3;SI(J2="Mulato/a";4;SI(J2="Negro/a";5;SI(J2="Montubio/a";6;SI(J2="Otro/a";7;99))))))))
+
+Afroecuatoriano/a Afrodescendiente = 0
+Blanco/a = 1
+Ind?gena = 2
+Mestizo/a = 3
+Mulato/a = 4
+Negro/a = 5
+Montubio/a = 6
+Otro/a = 7
+Ignorado/a = 99
+
+
+
+
+
+
+
+
+****************************************************************************************
+
+
+Provincia
+
+
+=SI(L2="Azuay";1;SI(L2="Bol?var";2;SI(L2="Ca?ar";3;SI(L2="Cotopaxi";5;SI(L2="Carchi";4;SI(L2="Chimborazo";6;SI(L2="El Oro";7;SI(L2="Esmeraldas";8;SI(L2="Guayas";9;SI(L2="Imbabura";10;SI(L2="Loja";11;SI(L2="Los R?os";12;SI(L2="Manab?";13;SI(L2="Morona Santiago";14;SI(L2="Napo";15;SI(L2="Pastaza";16;SI(L2="Pichincha";17;SI(L2="Tungurahua";18;SI(L2="Zamora Chinchipe";19;SI(L2="Gal?pagos";20;SI(L2="Sucumb?os";21;SI(L2="Orellana";22;SI(L2="Santo Domingo de los Ts?chilas";23;SI(L2="Santa Elena";24;99))))))))))))))))))))))))
+
+c?digo por provincia 
+
+
+
+
+****************************************************************************************
+
+
+Mes
+
+
+=SI(M2="Enero";1;SI(M2="Febrero";2;SI(M2="Marzo";3;SI(M2="Abril";4;SI(M2="Mayo";5;SI(M2="Junio";6;SI(M2="Julio";7;SI(M2="Agosto";8;SI(M2="Septiembre";9;SI(M2="Octubre";10;SI(M2="Noviembre";11;SI(M2="Diciembre";12))))))))))))
+
+
+
+codigo segun el numero de mes
+
+
+
+****************************************************************************************
+
+con_egrpa
+
+
+Fallecido en 48 horas y m?s = 0
+Fallecido menos de 48 horas = 1
+Vivo = 2
+
+=SI(Y2="Fallecido en 48 horas y m?s";0;SI(Y2="Fallecido menos de 48 horas";1;2))
+
+
+
+****************************************************************************************
+
+Especialidad
+
+
+
+=SI(E2="Alergolog?a";1;SI(E2="Atenci?n Primaria de la Salud";2;SI(E2="Cardiolog?a";3;SI(E2="Cardiopediatr?a";4;SI(E2="Cirug?a Cardiaca";5;SI(E2="Cirug?a General";6;SI(E2="Cirug?a M?xilo Facial";7;SI(E2="Cirug?a Oncol?gica";8;SI(E2="Cirug?a Pedi?trica";9;SI(E2="Cirug?a Pl?stica";10;SI(E2="Cirug?a Tor?xica";11;SI(E2="Cirug?a Vascular";12;SI(E2="Cl?nica del Dolor";13;SI(E2="Dermatolog?a";14;SI(E2="Endicronolog?a";15;SI(E2="Endodoncia";16;SI(E2="Gastroenterolog?a";17;SI(E2="Gen?tica";18;SI(E2="Geriatr?a";19;SI(E2="Hermatolog?a";20;SI(E2="Infectolog?a";21;SI(E2="Medicina Familiar";22;SI(E2="Medicina Interna";23;SI(E2="Nefrolog?a";24;SI(E2="Neonatolog?a";25;SI(E2="Neumolog?a";26;SI(E2="Neuro Psicolog?a";27;SI(E2="Neurocirug?a";28;SI(E2="Neurolog?a";29;SI(E2="Neurolog?a Cl?nica";30;SI(E2="Obstetricia";31;SI(E2="Odonto Pediatr?a";32;SI(E2="Oftalmolog?a";33;SI(E2="Onco Hematolog?a";34;SI(E2="Oncolog?a";35;SI(E2="Otorrinolaringolog?a";36;SI(E2="Otra";37;SI(E2="Pediatr?a";38;SI(E2="Proctolog?a";39;SI(E2="Psiquiatr?a";40;SI(E2="Reumatolog?a";41;SI(E2="Traumatolog?a";42;SI(E2="Urolog?a";43)))))))))))))))))))))))))))))))))))))))))))
+
+
+****************************************************************************************
+
+Parroquia ubicaci?n
+
+
+Belisario Quevedo = 0
+Carcel?n = 1
+Chilibulo = 2
+Chimbacalle = 3
+Cotocollao = 4
+Guaman? = 5
+Itchimbia = 6
+Mariscal Sucre = 7
+San Juan = 8
+
+
+
+=SI(A2="Belisario Quevedo";0;SI(A2="Carcel?n";1;SI(A2="Chilibulo";2;SI(A2="Chimbacalle";3;SI(A2="Cotocollao";4;SI(A2="Guaman?";5;SI(A2="Itchimbia";6;SI(A2="Mariscal Sucre";7;SI(A2="San Juan";8)))))))))
+
+
+
+
+****************************************************************************************
+
+Entidad
+
+Instituto Ecuatoriano de Seguridad Social = 0
+Ministerio de Defensa Nacional = 1
+Ministerio de Justicia, Derechos Humanos y Cultos = 2
+Ministerio de Salud P?blica = 3
+Municipios = 4
+
+=SI(E2="Instituto Ecuatoriano de Seguridad Social";0;SI(E2="Ministerio de Defensa Nacional";1;SI(E2="Ministerio de Justicia, Derechos Humanos y Cultos";2;SI(E2="Ministerio de Salud P?blica";3;SI(E2="Municipios";4)))))
+
+
+
+
+
+
+
+ 

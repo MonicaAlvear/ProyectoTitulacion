@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/Visualizador.css}" href="/css/Visualizador.css" rel="stylesheet" type="text/css"/>
+    <title>Predicción</title>
+    <link icon/>
+</head>
+<body>
+
+
+<div class="container">
+    <br>
+    <div align="center" id="cabecera">
+        <img src="data:image/jpeg;base64,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"/>
+    </div>
+
+
+    <div class="form__top">
+        <h3>Clasificación Estancia En Centros Hospitalarios</h3>
+    </div>
+
+
+    <form class="form__reg" action="/Clasificacion" method="POST">
+        <p>
+        <h1>Tipo:
+            <select name="tipo">
+                <option value="1">Crónico</option>
+                <option value="0">Agudo</option>
+            </select>
+        </h1>
+        </p>
+
+
+        <p>
+        <h1>Entidad:
+            <select name="Entidad">
+                <option value="0">Instituto Ecuatoriano de Seguridad Social</option>
+                <option value="1">Ministerio de Defensa Nacional</option>
+                <option value="2">Ministerio de Justicia, Derechos Humanos y Cultos</option>
+                <option value="3">Ministerio de Salud Pública</option>
+                <option value="4">Municipios</option>
+            </select>
+        </h1>
+        </p>
+
+        <p>
+        <h1>Sexo:
+            <select name="Sexo">
+                <option value="1">Masculino</option>
+                <option value="0">Femenino</option>
+            </select>
+        </h1>
+        </p>
+
+        <p>
+        <h1>Edad:
+            <input class="input" type="number" min="1" max="99" required name="Edad">
+        </h1>
+        </p>
+
+
+        <p>
+        <h1>Etnia:
+            <select name="Etnia">
+                <option value="0">Afroecuatoriano/a</option>
+                <option value="1">Blanco/a</option>
+                <option value="2">Indígena</option>
+                <option value="3">Mestizo/a</option>
+                <option value="4">Mulato/a</option>
+                <option value="5">Negro/a</option>
+                <option value="6">Montubio/a</option>
+                <option value="99">Otro</option>
+            </select>
+        </h1>
+        </p>
+
+
+        <p>
+        <h1>Mes Ingreso:
+            <select name="MesIngreso">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+        </h1>
+        </p>
+
+
+        <p>
+        <h1>Especialidad:
+            <select name="Especialidad">
+                <option value="1">Alergología</option>
+                <option value="2">Atención Primaria de la Salud</option>
+                <option value="3">Cardiología</option>
+                <option value="4">Cardiopediatría</option>
+                <option value="5">Cirugía Cardiaca</option>
+                <option value="6">Cirugía General</option>
+                <option value="7">Cirugía Máxilo Facial</option>
+                <option value="8">Cirugía Oncológica</option>
+                <option value="9">Cirugía Pediátrica</option>
+                <option value="10">Cirugía Plástica</option>
+                <option value="11">Cirugía Toráxica</option>
+                <option value="12">Cirugía Vascular</option>
+                <option value="13">Clínica del Dolor</option>
+                <option value="14">Dermatología</option>
+                <option value="15">Endocrinología</option>
+                <option value="16">Endodoncia</option>
+                <option value="17">Gastroenterología</option>
+                <option value="18">Genética</option>
+                <option value="19">Geriatría</option>
+                <option value="20">Hematología</option>
+                <option value="21">Infectología</option>
+                <option value="22">Medicina Familiar</option>
+                <option value="23">Medicina Interna</option>
+                <option value="24">Nefrología</option>
+                <option value="25">Neonatología</option>
+                <option value="26">Neumología</option>
+                <option value="27">Neuro Psicología</option>
+                <option value="28">Neurocirugía</option>
+                <option value="29">Neurología</option>
+                <option value="30">Neurología Clínica</option>
+                <option value="31">Obstetricia</option>
+                <option value="32">Odonto Pediatría</option>
+                <option value="33">Oftalmología</option>
+                <option value="34">Onco Hematología</option>
+                <option value="35">Oncología</option>
+                <option value="36">Otorrinolaringología</option>
+                <option value="38">Pediatría</option>
+                <option value="39">Proctología</option>
+                <option value="40">Psiquiatría</option>
+                <option value="41">Reumatología</option>
+                <option value="42">Traumatología</option>
+                <option value="43">Urología</option>
+                <option value="44">Ginecología</option>
+                <option value="45">Gerontología</option>
+                <option value="37">Otra</option>
+
+            </select>
+        </h1>
+        </p>
+        <br>
+
+        <div class="btn__form">
+            <input class="btn__submit" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    <form th:value="${arbol}">
+        <h4> Clasificación Arboles De Decisión =
+            <td th:utext="${arbol}">...</td>
+        </h4>
+    </form>
+
+    <form th:value="${regresion}">
+        <h4> Clasificación Regresón Logística =
+            <td th:utext="${regresion}">...</td>
+        </h4>
+    </form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body {
+    background-size: initial;
+    background: url(/img/fondo.jpg);
+    font-family: "Agency FB";
+
+ }
+
+.container {
+    max-width: 500px;
+    height: auto;
+    background-color: #EFEFEF;
+    margin: auto;
+    padding-bottom: 1rem;
+
+}
+
+.container .cabecera {
+
+    padding: 5px;
+    border-bottom: 5px solid #333;
+    margin-bottom: 1rem;
+    height: 70px;
+
+}
+
+
+.container .cabecera1 {
+
+    padding: 5px;
+    border-bottom: 5px solid #333;
+    margin-bottom: 1rem;
+    height: 70px;
+
+}
+
+
+
+.container .cabecera2 {
+
+    padding: 5px;
+    border-bottom: 5px solid #333;
+    margin-bottom: 1rem;
+    height: 70px;
+
+}
+
+
+.encabezado {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    color: blue;
+}
+
+
+.titulo {
+    font-weight: normal;
+    text-align: center;
+    color: rgba(9, 6, 7, 0.98);
+    font-size: 16px;
+
+}
+
+.input, .btn__cuentas_pais, .btn__cuentas_preferencia, .btn__cuenta_grupo, .btn__cuenta_redSocial, .btn__cuenta_telefono, .btn__todos_registros, .btn__cuenta_nombre, .btn__cuenta_usuario{
+    background-color: #EFEFEF;
+    text-align: center;
+    font-size: 20px;
+    padding: .5rem;
+    margin: .5rem;
+    border: none;
+    border-bottom: solid #C8C8C8 .3rem;
+    transition: all .5s;
+    width: 50%;
+}
+
+.input:focus {
+    border-bottom: solid #F39B53 .3rem;
+}
+
+
+
+.btn__cuentas_pais:hover {
+    background-color: #196afa;
+}
+
+.btn__cuentas_preferencia:hover {
+    background-color: #196afa;
+}
+
+.btn__cuenta_grupo:hover {
+    background-color: #196afa;
+}
+
+.btn__cuenta_redSocial:hover {
+    background-color: #196afa;
+}
+
+.btn__cuenta_telefono:hover {
+    background-color: #196afa;
+}
+
+.btn__todos_registros:hover {
+    background-color: #196afa;
+}
+
+
+.btn__cuenta_nombre:hover {
+    background-color: #196afa;
+}
+
+
+.btn__cuenta_usuario:hover {
+    background-color: #196afa;
+}
+
+h1{
+    color: #333333;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+h3{
+    color: darkviolet;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+h4{
+    color: black;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    background: gray;
+}
+
+h5{
+    color: #EFEFEF;
+    background: #333333;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.form__reg {
+    padding: 0 2rem;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn__submit, .btn__reset{
+    background-color: #333333;
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    border: none;
+    border-bottom: solid #333333 .3rem;
+    transition: all .5s;
+}
+
+
+.btn__submit1{
+    font-size: 20px;
+    background-color: #333333;
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    border: none;
+    border-bottom: solid #333333 .3rem;
+    transition: all .5s;
+}
+
+.btn__submit {
+    background-color: #EFEFEF;
+}
+
+.btn__submit1 {
+    background-color: gray;
+}
+
+
+.btn__submit:hover {
+    background-color: #196afa;
+}
+
+.btn__submit1:hover {
+    background-color: cornflowerblue;
+}
